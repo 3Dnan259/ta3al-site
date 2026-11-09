@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>تعال · بطاقات ولاء للمطاعم والكافيهات</title>
+<meta name="description" content="تعال: بطاقة ولاء رقمية بتنحفظ على موبايل الزبون بدون تطبيق، وبتخليه يرجع لمحلك.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#16221d; --soft:#4b5a52; --stone:#eceee7; --paper:#fafbf7; --line:#d5d9cf; --zaatar:#2e5a44; --saffron:#e3a33b; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#e7ebe4; --soft:#a3ada6; --stone:#111a16; --paper:#18231e; --line:#2c3a33; --zaatar:#6fae8c; --saffron:#f0b553; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--stone); color:var(--ink); font-family:"Readex Pro",system-ui,sans-serif; line-height:1.75; }
+  a { color:var(--zaatar); }
+  :focus-visible { outline:3px solid var(--saffron); outline-offset:2px; }
+  .wrap { max-width:760px; margin:auto; padding:0 16px; }
+  header { padding:28px 0; }
+  .logo { display:inline-flex; align-items:center; gap:.3em; color:var(--zaatar); font-weight:700; font-size:30px; letter-spacing:-.5px; line-height:1; text-decoration:none; }
+  .logo svg { width:1.15em; height:1.15em; }
+  .hero { padding:40px 0 56px; }
+  .hero h1 { font-size:clamp(34px,6vw,54px); line-height:1.2; margin:0 0 18px; font-weight:700; }
+  .hero p { font-size:19px; color:var(--soft); max-width:34em; margin:0; }
+  .stamps { display:flex; gap:10px; margin-top:34px; flex-wrap:wrap; }
+  .stamps span { width:44px; height:44px; border-radius:50%; display:grid; place-items:center; font-weight:500; }
+  .stamps .on { background:var(--zaatar); color:#fff; }
+  .stamps .off { border:2px dashed var(--line); color:var(--soft); }
+  .stamps .goal { width:auto; padding:0 18px; border-radius:999px; background:var(--saffron); color:#2b1d05; }
+  section { background:var(--paper); border-radius:22px; padding:28px; margin-bottom:18px; }
+  h2 { margin:0 0 12px; font-size:22px; }
+  ol { padding-inline-start:1.2em; margin:0; }
+  ol li { margin-bottom:8px; }
+  dl { display:grid; grid-template-columns:max-content 1fr; gap:6px 20px; margin:0; }
+  dt { color:var(--soft); }
+  dd { margin:0; direction:ltr; text-align:right; }
+  footer { padding:28px 0 48px; color:var(--soft); font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="logo" href="#">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M47.56 16.44 A22 22 0 1 1 30 10.1" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/><path d="M39.5 10 L29 3 L29 17 Z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="32" cy="32" r="8.5" fill="var(--saffron)"/></svg>تعال</a>
+  </header>
+
+  <div class="hero">
+    <h1>خلّي زبونك يرجعلك</h1>
+    <p>تعال بطاقة ولاء رقمية للمطاعم والكافيهات. الزبون بيمسح QR على الطاولة، وبتنحفظ البطاقة على موبايله بدون أي تطبيق، وبكل زيارة بتقرّبه من مكافأته.</p>
+    <div class="stamps" aria-hidden="true">
+      <span class="on">1</span><span class="on">2</span><span class="off">3</span><span class="off">4</span><span class="goal">5 🎁</span>
+    </div>
+  </div>
+
+  <section>
+    <h2>كيف بيشتغل</h2>
+    <ol>
+      <li>الزبون بيمسح QR الطاولة، وبيضيف بطاقة المحل على Google Wallet.</li>
+      <li>عند الدفع، الكاشير بيمسح البطاقة، وبتنعد الزيارة.</li>
+      <li>بعد عدد الزيارات اللي بيحدده المحل، الزبون بياخد مكافأته: منتج مجاني أو حسم.</li>
+      <li>صاحب المحل بيغيّر شكل البطاقة والمكافأة من لوحة تحكم، والتغيير بيوصل لكل البطاقات.</li>
+    </ol>
+  </section>
+
+  <section id="support">
+    <h2>الدعم والتواصل</h2>
+    <p>عندك سؤال عن بطاقتك أو بدك تشترك بمحلك؟ تواصل معنا:</p>
+    <dl>
+      <dt>الإيميل</dt><dd><a href="mailto:ta3al.support@gmail.com">ta3al.support@gmail.com</a></dd>
+      <dt>واتساب</dt><dd><a href="https://wa.me/963938784641">+963 938 784 641</a></dd>
+    </dl>
+  </section>
+
+  <section id="privacy">
+    <h2>سياسة الخصوصية</h2>
+    <p>تعال بيجمع أقل قدر ممكن من البيانات:</p>
+    <ol>
+      <li>رقم تعريف عشوائي للبطاقة، ما فيه اسمك ولا رقمك.</li>
+      <li>عدد الزيارات وأوقاتها، والكاشير اللي سجّلها، حتى نحسب المكافأة ونمنع التلاعب.</li>
+    </ol>
+    <p>ما منطلب اسمك ولا رقم موبايلك ولا موقعك، وما منبيع أي بيانات لحدا. البطاقة محفوظة بـ Google Wallet، وفيك تحذفها بأي وقت من التطبيق. وإذا بدك نحذف سجل زياراتك من عندنا، ابعتلنا رقم البطاقة على الإيميل.</p>
+    <p style="color:var(--soft);font-size:14px">آخر تحديث: تشرين الثاني 2026</p>
+  </section>
+
+  <footer>© 2026 تعال</footer>
+</div>
+</body>
+</html>
